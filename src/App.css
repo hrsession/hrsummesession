@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Carlson Script";
+  src: url("./assets/fonts/carlson/carlson-script.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/League_Spartan/static/LeagueSpartan-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/League_Spartan/static/LeagueSpartan-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/League_Spartan/static/LeagueSpartan-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/League_Spartan/static/LeagueSpartan-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+p,
+a {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+}
+
+.font-spartan-medium {
+  font-weight: 500;
+}
+
+.font-spartan-semibold {
+  font-weight: 600;
+}
+
+.font-spartan-bold {
+  font-weight: 700;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}

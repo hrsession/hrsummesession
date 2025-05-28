@@ -1,0 +1,104 @@
+[
+  {
+    "firstName": "Mehdi",
+    "lastName": "Mangal",
+    "description": "Mehdi est metteur en scène, comédien et formateur depuis plus de 10 ans. Trois disciplines cimentent son accompagnement et sa pédagogie : la communication interpersonnelle, le théâtre, la préparation mentale.",
+    "image": "/speakers/Mehdi Mangal.webp"
+  },
+  {
+    "firstName": "Noémie",
+    "lastName": "Aubron",
+    "description": "Noémie Aubron est spécialisée dans la transformation digitale des RH. Elle animera un atelier sur l'implémentation réussie des outils numériques pour optimiser les processus RH.",
+    "image": "speakers/Noémie Aubron.webp"
+  },
+  {
+    "firstName": "Jacques",
+    "lastName": "de Tonquédec",
+    "description": "Jacques représente et conseille des entreprises françaises et internationales, associations, branches professionnelles, sur toutes les problématiques de droit social et les accompagne dans leurs stratégies sociales de manière pragmatique et opérationnelle.",
+    "image": "speakers/Jacques de Tonquédec.webp"
+  },
+  {
+    "firstName": "Fabian",
+    "lastName": "Caldarella",
+    "description": "Fabien est en charge de la direction du pôle recrutement chez Artemys, après plusieurs années d’expérience dans le conseil et l’accompagnement des entreprises du secteur IT sur leurs enjeux RH. Reconnu pour sa vision terrain du recrutement et son franc-parler , il déploie une approche à la fois structurée, humaine et résolument tournée vers l’impact , alignée avec les attentes des talents d’aujourd’hui. Lors de la HR Summer Session, il animera un atelier sans filtre sur l’onboarding — ce moment souvent sous-estimé où tout peut se jouer : engagement, fidélisation, ou départ prématuré. Un atelier sans langue de bois, pour passer du « bienvenue chez nous » à « reste avec nous »",
+    "image": "/speakers/Fabien Caldarella.webp"
+  },
+  {
+    "firstName": "Charlotte",
+    "lastName": "Bertrand",
+    "description": "Charlotte est avocate associée au sein du Cabinet Avanty spécialisé en protection sociale et rémunération complémentaire. Charlotte accompagne au quotidien de grandes entreprises dans la gestion de leurs dispositifs d’épargne salariale, de prévoyance, de frais de santé et de retraite, ainsi qu’ en matière de paie et d’URSSAF.",
+    "image": "/speakers/Charlotte Bertrand.webp"
+  },
+  {
+    "firstName": "Clément",
+    "lastName": "Lemainque",
+    "description": "Clément Lemainque est DRH de transition, enseignant (Science Po, IAE Gustave Eiffel, Université Paris XII), conférencier et formateur.Passionné d’innovation RH et d’entrepreneuriat, il intervient régulièrement sur des thématiques liées à ces sujets, mais également sur l’expérience collaborateur, l’expérience candidat et les sujets d’onboarding et d’offboarding.",
+    "image": "/speakers/Clément Lemainque.webp"
+  },
+  {
+    "firstName": "Celine",
+    "lastName": "Cussac",
+    "description": "Céline Cussac Alchimiste de l'Entreprise Vivante et Apprenante, fondatrice d'A Little Big Dream (www.alittlebigdream.fr) Ex-Directrice L&D BPCE/Natixis. Elle accompagne la fonction L&D à rayonner et amplifier son impact à l'ère de l'IA grâce à des espaces d'Empowerment individuel, collectif et organisationnel.",
+    "image": "/speakers/Celine Cussac.webp"
+  },
+  {
+    "firstName": "Anne",
+    "lastName": "Brochard",
+    "description": "Anne Brochard est une spécialiste de la gestion des carrières et de la mobilité interne. Son atelier offrira des perspectives sur les parcours professionnels personnalisés et la rétention des talents. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "/speakers/Anne Brochard.webp"
+  },
+  {
+    "firstName": "Soazig",
+    "lastName": "Sarazain",
+    "description": "Soazig en plus d'être consultante en relations et stratégies sociales dans le secteur privé et public au sein du cabinet VOXNEGO, dirige également le Master et les certificats Négociation et Relations sociales à l’Université Paris Dauphine PSL et est membre du Haut conseil du dialogue social.",
+    "image": "/speakers/Soazig Sarazain.webp"
+  },
+  {
+    "firstName": "Sandrine",
+    "lastName": "Dorbes",
+    "description": "Sandrine Dorbes est consultante en politiques de rémunération, conférencière et autrice du livre La rémunération n’est pas qu’une question d’argent (Dunod, 2025). Elle accompagne dirigeants et DRH dans la construction de politiques salariales à la fois équitables, lisibles et durables, avec une approche mêlant expertise technique et compréhension fine des dynamiques humaines.",
+    "image": "/speakers/Sandrine Dorbes.webp"
+  },
+  {
+    "firstName": "Richard",
+    "lastName": "Lavergne",
+    "description": "Coach certifié ESSEC, praticien expert, formé à l'analyse systémique, spécialiste du leadership and change, intervient en qualité de coach de dirigeants, de managers et de praticiens (conseil et formation). Parmi ses références clients : Bosch, Leroy Merlin, ADP, Yves Rocher, Système U, Estee Lauder, Fondation Pour le Logement, Terres Solidaires…",
+    "image": "/speakers/Richard Lavergne.webp"
+  },
+  {
+    "firstName": "Lobna",
+    "lastName": "Calleja Ben Hassine",
+    "description": "Avec plus de 20 ans d’expérience, elle a évolué dans des environnements aussi variés que la Tech, la Mode..., ce qui lui donne une vision à 360° des organisations et des enjeux RH, autant stratégiques qu’opérationnels. Passionnée par l’innovation et l’humain, elle intègre aujourd’hui l’IA, la data et la créativité dans l’ensemble de la chaîne de valeur RH pour décupler l’efficacité opérationnelle et l’impact de la fonction.",
+    "image": "/speakers/Lobna Calleja Ben Hassine.webp"
+  },
+  {
+    "firstName": "Pierre",
+    "lastName": "Monclos",
+    "description": "Pierre est DRH chez Unow qu’il a rejoint pour faire de la formation en ligne un levier de développement des organisations. Spécialisé dans la digitalisation et dans les innovations RH, il conseille les directions formation de toutes tailles dans leurs stratégies et pratiques de développement des compétences (impact des évolutions réglementaires, pédagogiques et technologiques : digital et RH).",
+    "image": "/speakers/Pierre Monclos.webp"
+  },
+  {
+    "firstName": "Perrine",
+    "lastName": "Soulier",
+    "description": "Perrine Soulier est une consultante en transformation organisationnelle et en culture d'entreprise. Son atelier guidera les participants à travers les étapes de la refonte des valeurs d'entreprise pour favoriser un environnement de travail positif et performant. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "/speakers/Perrine Soulier.webp"
+  },
+  {
+    "firstName": "Ophelie",
+    "lastName": "Ayouaz",
+    "description": "Ophélie intervient en tant que coach certifiée auprès des organisations et des individus pour comprendre comment s’adapter avec sérénité à un monde qui change en permanence, grâce notamment à l’assertivité et le feedback, deux soft skills essentielles aujourd’hui. Son expérience dans les startups et l’innovation et sa formation à l’ingénierie pédagogique, la facilitation et la connaissance de soi font d’elle une intervenante pragmatique et concrète.",
+    "image": "/speakers/Ophelie Ayouaz.webp"
+  },
+  {
+    "firstName": "Julie",
+    "lastName": "Teillet",
+    "description": "Avec plus de 20 ans d’expérience dans des fonctions RH stratégiques, Julie accompagne des comités de direction et leurs entreprises dans la conduite de transformations majeures, impactant l’organisation, les compétences et les modèles de service. Son parcours de DRH et de Directrice du Développement RH Groupe lui a permis de développer une expertise solide en matière de recrutement, de fidélisation, de mobilité et de marque employeur.",
+    "image": "/speakers/Julie Teillet.webp"
+  },
+  {
+    "firstName": "Sabrina",
+    "lastName": "Dougados",
+    "description": "Sabrina est avocate associée au sein du Cabinet Littler propose à ses clients une vision stratégique de leurs problématiques, en veillant à leur proposer des solutions juridiques pragmatiques. Elle les accompagne au quotidien dans la maitrise de leur cadre légal, le champ de la formation professionnelle se situant à la croisée de nombreux domaines de Droit.",
+    "image": "/speakers/Sabrina Dougados.webp"
+  }
+]

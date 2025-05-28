@@ -1,0 +1,203 @@
+[
+  {
+    "id": "j1a1",
+    "intervenant": "Sandrine Dorbes",
+    "theme": "Rémunération",
+    "highlighted": true,
+    "atelier": "Transparence des salaires",
+    "date": "7-Jul",
+    "jour": "jour1",
+    "horaires": "9h - 10h30"
+  },
+  {
+    "id": "j1a2",
+    "intervenant": "Noemie Aubron",
+    "theme": "Prospectives RH",
+    "highlighted": true,
+    "atelier": "RH en 2030",
+    "date": "7-Jul",
+    "jour": "jour1",
+    "horaires": "11h - 12h30"
+  },
+  {
+    "id": "j1a3",
+    "intervenant": "Julie Teillet",
+    "theme": "RH stratège",
+    "highlighted": false,
+    "atelier": "Posture RH dans la conduite du changement : quelle place occuper ?",
+    "date": "7-Jul",
+    "jour": "jour1",
+    "horaires": "14h - 15h30"
+  },
+  {
+    "id": "j1a4",
+    "intervenant": "Perrine Soulier",
+    "theme": "IA RH",
+    "highlighted": false,
+    "atelier": "Créer son Chatbot RH avec l'IA",
+    "date": "7-Jul",
+    "jour": "jour1",
+    "horaires": "14h - 15h30"
+  },
+  {
+    "id": "j1a5",
+    "intervenant": "Charlotte Bertrand",
+    "theme": "Rémunération",
+    "highlighted": false,
+    "atelier": "Optimiser le partage de la valeur en entreprise",
+    "date": "7-Jul",
+    "jour": "jour1",
+    "horaires": "16h - 17h30"
+  },
+  {
+    "id": "j1a6",
+    "intervenant": "Soazig Sarazain",
+    "theme": "Dialogue Social",
+    "highlighted": false,
+    "atelier": "IA et Dialogue Social",
+    "date": "7-Jul",
+    "jour": "jour1",
+    "horaires": "16h - 17h30"
+  },
+  {
+    "id": "j2a1",
+    "intervenant": "Lobna Calleja",
+    "theme": "Data RH",
+    "highlighted": false,
+    "atelier": "Indicateurs RH, pour qui / pourquoi ?",
+    "date": "8-Jul",
+    "jour": "jour2",
+    "horaires": "9h - 10h30"
+  },
+  {
+    "id": "j2a2",
+    "intervenant": "Anne Brochard",
+    "theme": "Recrutement",
+    "highlighted": true,
+    "atelier": "Le recrutement : pire que tinder ?",
+    "date": "8-Jul",
+    "jour": "jour2",
+    "horaires": "11h - 12H30"
+  },
+  {
+    "id": "j2a3",
+    "intervenant": "Richard Lavergne",
+    "theme": "QVT",
+    "highlighted": true,
+    "atelier": "Le RH est il un psy ?",
+    "date": "8-Jul",
+    "jour": "jour2",
+    "horaires": "14h - 17h00"
+  },
+  {
+    "id": "j2a4",
+    "intervenant": "Ophélie Ayouaz",
+    "theme": "Soft Skills",
+    "highlighted": false,
+    "atelier": "RH : Gérer son temps",
+    "date": "8-Jul",
+    "jour": "jour2",
+    "horaires": "14h - 15h30"
+  },
+  {
+    "id": "j2a5",
+    "intervenant": "Clément Lemainque",
+    "theme": "Soft Skills",
+    "highlighted": false,
+    "atelier": "Symétrie des attentions",
+    "date": "8-Jul",
+    "jour": "jour2",
+    "horaires": "16h - 17h00",
+    "format": "Stand up"
+  },
+  {
+    "id": "j3a1",
+    "intervenant": "Jacques de Tonquedec",
+    "theme": "Droit du travail",
+    "highlighted": true,
+    "atelier": "IA au travail, quels enjeux ?",
+    "date": "9-Jul",
+    "jour": "jour3",
+    "horaires": "9h - 10h30"
+  },
+  {
+    "id": "j3a2",
+    "intervenant": "Céline Cussac",
+    "theme": "Intellignece Artificielle",
+    "highlighted": true,
+    "atelier": "Organisation apprenante",
+    "date": "9-Jul",
+    "jour": "jour3",
+    "horaires": "11h - 12h30"
+  },
+  {
+    "id": "j3a3",
+    "intervenant": "Pierre Monclos",
+    "theme": "Intelligence Artificielle",
+    "highlighted": true,
+    "atelier": "La santé mentale et Agents IA ? Où en sommes-nous ?",
+    "date": "9-Jul",
+    "jour": "jour3",
+    "horaires": "12h30 - 14h00"
+  },
+  {
+    "id": "j3a4",
+    "intervenant": "Sabrina Dougados",
+    "theme": "Droit de la formation",
+    "highlighted": false,
+    "atelier": "Construire et financer son plan de développement des compétences 2026",
+    "date": "9-Jul",
+    "jour": "jour3",
+    "horaires": "14h - 15h30"
+  },
+  {
+    "id": "j3a5",
+    "intervenant": "Mehdi Mangal",
+    "theme": "Soft Skills",
+    "highlighted": false,
+    "atelier": "RH: savoir être convaincant",
+    "date": "9-Jul",
+    "jour": "jour3",
+    "horaires": "14h - 15h30"
+  },
+  {
+    "id": "j3a6",
+    "intervenant": "Clément Lemainque",
+    "theme": "Prospectives RH",
+    "highlighted": false,
+    "atelier": "Symétrie des attentions",
+    "date": "9-Jul",
+    "jour": "jour3",
+    "horaires": "16h - 17h00"
+  },
+  {
+    "id": "j3a7",
+    "intervenant": "Fabien Caldarella",
+    "theme": "Prospectives RH",
+    "highlighted": false,
+    "atelier": "On recrute mal... mais on onboard encore pire",
+    "date": "9-Jul",
+    "jour": "jour3",
+    "horaires": "16h - 17h00"
+  },
+  {
+    "id": "j3a8",
+    "intervenant": "Bertrand Couprie",
+    "theme": "IA",
+    "highlighted": false,
+    "atelier": "Prompts RH : gagnez en efficacité",
+    "date": "9-Jul",
+    "jour": "jour3",
+    "horaires": "16h - 17h00"
+  },
+  {
+    "id": "j3a7",
+    "intervenant": "Process Comedy",
+    "theme": "Process Comedy",
+    "highlighted": false,
+    "atelier": "Tous les participants, quelle que soit la journée réservée, ont accès à l'afterwork !",
+    "date": "9-Jul",
+    "jour": "jour3",
+    "horaires": "17H30 - 20h00"
+  }
+]
