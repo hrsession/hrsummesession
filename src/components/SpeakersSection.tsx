@@ -85,7 +85,7 @@ const SpeakersSection: React.FC = () => {
               {speakersData.map((speaker: Speaker, index: number) => (
                 <div
                   key={index}
-                  className="speaker-card w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1.33rem)] lg:w-[calc(25%-1.5rem)] min-h-[30rem] px-3
+                  className="speaker-card w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1.33rem)] lg:w-[calc(25%-1.5rem)] min-h-[25rem] px-3
                   bg-white rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-t-4 border-[#8cc6e9] relative h-full flex flex-col justify-between"
                   style={{
                     minWidth:

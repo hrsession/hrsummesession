@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { Contact } from "lucide-react";
 import ContactForm from "./ContactForm";
 
 declare module "react" {
@@ -178,7 +177,7 @@ const Header: React.FC = () => {
           </nav>
         </div>
       )}
-      <div id="contactForm" className="w-3/4" popover="auto">
+      <div id="contactForm" className="w-3/4 rounded-xl p-0" popover="auto">
         <ContactForm onClose={() => setIsMenuOpen(true)} />
       </div>
     </header>

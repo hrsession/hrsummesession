@@ -4,6 +4,10 @@ export interface Workshop {
   theme: string;
   highlighted: boolean;
   atelier: string;
+  titre?: string;
+  "dot-1"?: string;
+  "dot-2"?: string;
+  "dot-3"?: string;
   date: string;
   jour: string;
   horaires: string;

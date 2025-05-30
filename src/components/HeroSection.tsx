@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 
 interface HeroSectionProps {
   title: string;
-  paragraphEmphasized: String;
-  paragraph: string;
+  paragraphEmphasized1: String;
+  paragraphEmphasized2: String;
+  paragraph1: string;
+  paragraph2: string;
   buttonText: string;
   buttonLink: string;
   backgroundImage?: string;
@@ -13,8 +15,10 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({
   title,
-  paragraphEmphasized,
-  paragraph,
+  paragraphEmphasized1,
+  paragraphEmphasized2,
+  paragraph1,
+  paragraph2,
   buttonText,
   buttonLink,
   backgroundImage = "program/hero-program.webp",
@@ -60,8 +64,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="w-32 h-1 bg-white rounded-full my-4"></div>
             </div>
             <div className="text-lg md:text-xl 2xl:text-2xl mb-8 bg-primary bg-opacity-70 p-4 rounded-lg shadow-lg">
-              <p>{paragraph}</p>
-              <span className="font-black block">{paragraphEmphasized}</span>
+              <p>
+                <span className="font-black block">{paragraphEmphasized1}</span>
+                {paragraph1}
+                <span className="font-black block">
+                  {paragraphEmphasized2}
+                  <span className="font-normal"> {paragraph2}</span>
+                </span>
+              </p>
             </div>
             <Link
               to={buttonLink}
