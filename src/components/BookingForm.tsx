@@ -50,15 +50,6 @@ const BookingForm: React.FC<BookingFormProps> = ({
     }
   };
 
-  const getWorkshopInfo = (workshopId: string) => {
-    const workshop = (workshopData as Workshop[]).find(
-      (w) => w.id === workshopId
-    );
-    return workshop
-      ? `${workshop.atelier} (${workshop.intervenant})`
-      : workshopId;
-  };
-
   const isLongWorkshopSelected = (day: string) => {
     if (day !== "jour2") return false;
 
