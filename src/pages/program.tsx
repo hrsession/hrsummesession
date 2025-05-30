@@ -73,7 +73,7 @@ const Program: React.FC = () => {
           <div id="bookingGuide" className="text-center mb-16">
             <h2 className="w-auto mx-auto text-2xl md:text-3xl lg:text-4xl font-bold text-[#8cc6e9] mb-6 md:mb-11 relative inline-block text-center">
               Programme et Réservation
-              <div className="absolute -bottom-3 left-0 right-0 h-1 bg-[#FF1C66] rounded-full transform -rotate-1"></div>
+              <div className="absolute -bottom-3 left-0 right-0 h-1 bg-[#FF1C66] rounded-full transform -rotate-1 "></div>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Découvrez notre programme d'ateliers dédié aux professionnels RH.
