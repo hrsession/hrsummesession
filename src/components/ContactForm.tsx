@@ -44,7 +44,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
 
     try {
       const googleFormUrl =
-        "https://script.google.com/macros/s/VOTRE_ID_SCRIPT_CONTACT/exec";
+        "https://script.google.com/macros/s/AKfycbyIXXGAbGJNufLZIR0fmG4qFx6rzl6mSJhzR-bvIP7lEcDbOzBYOSrbUXwl1iaTVRpf1A/exec";
 
       const dataToSend = {
         nom: formData.nom,
