@@ -98,11 +98,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="self-center  md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1">
             <img
               src="logos/logo-summerSession.webp"
-              className="hidden lg:block w-[35rem] span-col-1 span-row-1"
-              alt="Logo des RH summer session"
+              className="hidden lg:block w-[35rem] span-col-1 span-row-1 mb-20"
+              alt="Logo de RH summer session"
             />
           </div>
-          <div className="w-1/2 flex justify-center mx-auto lg:mx-0 md:justify-start  gap-3 items-center px-11">
+          <div className="w-full flex justify-end mx-auto lg:mx-0 md:justify-end  gap-3 items-center  mt-20">
             <img
               src="logos/logo-learns.svg"
               className="self-center"
