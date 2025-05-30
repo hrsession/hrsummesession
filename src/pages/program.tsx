@@ -58,8 +58,10 @@ const Program: React.FC = () => {
     <>
       <HeroSection
         title="Découvrez le programme et réservez vos ateliers dès maintenant!"
-        paragraph="Apprendre, prendre du recul et aussi partager (ou travailler pour ne pas cumuler du retard), c'est ce que nous vous proposons pour ce HR Summer Session qui se déroule dans"
-        paragraphEmphasized="un lieu à chaleur ajoutée."
+        paragraph1="Apprendre, prendre du recul et aussi partager (ou travailler pour ne pas cumuler du retard), c'est ce que nous vous proposons pour ce HR Summer Session qui se déroule dans"
+        paragraph2="un lieu à chaleur ajoutée."
+        paragraphEmphasized1=""
+        paragraphEmphasized2=""
         backgroundImage="program/hero-program.webp"
         buttonText="Réservez vos sessions"
         buttonLink="/#bookingGuide"
