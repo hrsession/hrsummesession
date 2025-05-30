@@ -44,7 +44,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
 
     try {
       const googleFormUrl =
-        "https://script.google.com/macros/s/AKfycbyIXXGAbGJNufLZIR0fmG4qFx6rzl6mSJhzR-bvIP7lEcDbOzBYOSrbUXwl1iaTVRpf1A/exec";
+        "https://script.google.com/macros/s/AKfycbz_MWNUShZfV0XWRg6NLe_iZCQDrt4sy9SqyUY4Btxif26Bm3ylBv1SMiO4vt7c53zZyQ/exec";
 
       const dataToSend = {
         nom: formData.nom,
@@ -54,7 +54,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
         dateContact: new Date().toISOString(),
       };
 
+      console.log("Tentative d'envoi des données:", dataToSend);
+      console.log("URL du formulaire:", googleFormUrl);
+
       try {
+        console.log("Envoi de la requête POST...");
         const response = await fetch(googleFormUrl, {
           method: "POST",
           headers: {
@@ -63,27 +67,39 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
           body: JSON.stringify(dataToSend),
         });
 
+        console.log("Statut de la réponse:", response.status);
+        console.log(
+          "Headers de la réponse:",
+          Object.fromEntries(response.headers.entries())
+        );
+
         if (response.ok) {
           try {
             const result = await response.json();
+            console.log("Réponse du serveur:", result);
             if (result.success) {
               setSubmitSuccess(true);
             } else {
+              console.error("Erreur du serveur:", result.error);
               setSubmitError(
                 result.error || "Une erreur est survenue lors de l'envoi."
               );
             }
           } catch (jsonError) {
+            console.error("Erreur parsing JSON:", jsonError);
             setSubmitSuccess(true);
           }
         } else {
+          console.error(
+            "Réponse non-OK:",
+            response.status,
+            response.statusText
+          );
           throw new Error("Réponse du serveur non valide: " + response.status);
         }
       } catch (corsError) {
-        console.log(
-          "Échec avec CORS activé, tentative avec no-cors",
-          corsError
-        );
+        console.error("Erreur CORS:", corsError);
+        console.log("Tentative avec no-cors...");
 
         await fetch(googleFormUrl, {
           method: "POST",

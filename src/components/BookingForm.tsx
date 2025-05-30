@@ -92,8 +92,10 @@ const BookingForm: React.FC<BookingFormProps> = ({
         if (afternoonWorkshops[day] && afternoonWorkshops[day].length > 0) {
           selections += "  Ateliers PM sélectionnés :\n";
           afternoonWorkshops[day].forEach((workshopKey) => {
-            const workshopId = `${day.slice(-1)}${workshopKey.slice(-1)}`;
-            selections += `  - ${getWorkshopInfo(`j${workshopId}`)}\n`;
+            const dayNumber = day.slice(-1);
+            const workshopNumber = workshopKey.slice(-1);
+            const workshopId = `j${dayNumber}a${workshopNumber}`;
+            selections += `  - ${workshopId}\n`;
           });
 
           if (isLongWorkshopSelected(day)) {
@@ -145,7 +147,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
 
     try {
       const googleFormUrl =
-        "https://script.google.com/macros/s/AKfycbyKyPqw8b3w_AW2le3T1RFn27QVoeBC3jKrKjeQGjLH2Hdr1J3my2ijzfLyS4RgA9Px/exec";
+        "https://script.google.com/macros/s/AKfycbxykozn1EqnmoA4W4V0nIcO6bANO9jkQK17L-fBIZIb2AUeHp_M8Dko7EPITbR1lCdo/exec";
 
       const formattedSelections = formatSelections();
       const totalAmount = calculateTotal();
