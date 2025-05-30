@@ -1,5 +1,3 @@
-import React from "react";
-
 const NetworkingEvent: React.FC = () => {
   return (
     <div className="bg-gradient-to-br from-[#8cc6e9] to-[#67b8d8] text-white rounded-xl shadow-lg p-6 mb-8 relative overflow-hidden transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">

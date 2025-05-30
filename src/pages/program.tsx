@@ -2,8 +2,7 @@ import { useState } from "react";
 import BookingGuide from "../components/BookingGuide";
 import BookingCalendar from "../components/BookingCalendar";
 import NetworkingEvent from "../components/NetworkingEvent";
-import BookingForm from "../components/BookingForm";
-import HeroSection from "../components/HeroSection";
+import BookingForm from "../components/BookingCalendar/components/BookingForm";
 
 const Program: React.FC = () => {
   const [selectedDays, setSelectedDays] = useState<string[]>([]);
@@ -56,19 +55,7 @@ const Program: React.FC = () => {
 
   return (
     <>
-      <HeroSection
-        title="Découvrez le programme et réservez vos ateliers dès maintenant!"
-        paragraph1="Apprendre, prendre du recul et aussi partager (ou travailler pour ne pas cumuler du retard), c'est ce que nous vous proposons pour ce HR Summer Session qui se déroule dans"
-        paragraph2="un lieu à chaleur ajoutée."
-        paragraphEmphasized1=""
-        paragraphEmphasized2=""
-        backgroundImage="program/hero-program.webp"
-        buttonText="Réservez vos sessions"
-        buttonLink="/#bookingGuide"
-        date="Places limitées"
-        scrollToId="bookingGuide"
-      />
-      <section className="py-20 bg-gradient-to-b from-white to-blue-50">
+      <section className="py-40 bg-gradient-to-b from-white to-blue-50">
         <div className="container mx-auto px-4">
           <div id="bookingGuide" className="text-center mb-16">
             <h2 className="w-auto mx-auto text-2xl md:text-3xl lg:text-4xl font-bold text-[#8cc6e9] mb-6 md:mb-11 relative inline-block text-center">

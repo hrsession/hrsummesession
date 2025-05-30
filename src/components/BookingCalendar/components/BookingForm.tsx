@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
-import type { Workshop } from "../types";
-import workshopData from "../data/workshops.json";
+import type { Workshop } from "../../../types";
+import workshopData from "../../../data/workshops.json";
 
 interface BookingFormProps {
   selectedDays: string[];
@@ -58,7 +58,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
       const workshop = (workshopData as Workshop[]).find(
         (w) => w.id === workshopId
       );
-      return workshop && workshop.atelier.includes("Le RH est il un psy ?");
+      return workshop?.titre?.includes("Le RH est il un psy ?") || false;
     });
   };
 

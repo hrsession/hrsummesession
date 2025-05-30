@@ -65,9 +65,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             <div className="text-lg md:text-xl 2xl:text-2xl mb-8 bg-primary bg-opacity-70 p-4 rounded-lg shadow-lg">
               <p>
-                <span className="font-black block">{paragraphEmphasized1}</span>
+                <span className="font-black">{paragraphEmphasized1}</span>
                 {paragraph1}
-                <span className="font-black block">
+                <span className="font-black">
                   {paragraphEmphasized2}
                   <span className="font-normal"> {paragraph2}</span>
                 </span>

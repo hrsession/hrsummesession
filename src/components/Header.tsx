@@ -34,12 +34,11 @@ const Header: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-primary to-primary-light text-white shadow-md z-50">
       <div className="bg-secondary text-white text-center py-1 font-bold tracking-widest text-sm">
-        <p>SAVE THE DATE!</p>
-        <p className="">Du 07 Juillet au 09 Juillet !</p>
+        <p>SAVE THE DATE! Du 07 Juillet au 09 Juillet !</p>
       </div>
 
       <div className="container w-full max-w-[100rem] mx-auto p-4 flex justify-between items-center md:h-28 ">
-        <div className="flex items-center flex-col w-1/4 max-w-[20rem]">
+        <div className="flex items-center flex-col w-1/4 min-w-[14rem] max-w-[20rem]">
           <img
             src="logos/logo-header.webp"
             className=""

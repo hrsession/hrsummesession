@@ -1,5 +1,3 @@
-import React from "react";
-
 const PolitiqueConfidentialite: React.FC = () => {
   return (
     <div className="container mx-auto px-4 pb-12 pt-28 md:pt-48 max-w-4xl">

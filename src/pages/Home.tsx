@@ -1,7 +1,7 @@
 import HeroSection from "../components/HeroSection";
 import BenefitsSection from "../components/BenefitsSection";
 import SpeakersSection from "../components/SpeakersSection";
-import WorkshopCalendar from "../components/WorkshopCalendar";
+import WorkshopCalendar from "../components/WorkshopCalendar/index";
 
 const Home: React.FC = () => {
   return (
