@@ -45,10 +45,6 @@ next-env.d.ts
 **/public/worker-*.js
 **/public/sw.js.map
 **/public/workbox-*.js.map
-<<<<<<< HEAD
-**/public/worker-*.js.map 
-=======
-**/public/worker-*.js.map
 
 # Logs
 logs
@@ -78,4 +74,3 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local 
->>>>>>> b8f125d (Initial commit)
