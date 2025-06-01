@@ -1,10 +1,10 @@
 const BookingGuide: React.FC = () => {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-8 mb-16 border-2 border-[#8cc6e9] bg-[url('https://www.transparenttextures.com/patterns/clean-textile.png')]">
+    <div className="relative bg-white rounded-xl shadow-lg p-8 mb-16 border-2 border-[#8cc6e9] bg-[url('https://www.transparenttextures.com/patterns/clean-textile.png')]">
       <h3 className="text-2xl font-bold text-[#8cc6e9] mb-4 flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8 mr-2 text-[#FF1C66]"
+          className="hidden md:block h-8 w-8 mr-2 text-[#FF1C66]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -18,6 +18,9 @@ const BookingGuide: React.FC = () => {
         </svg>
         Guide de l'explorateur : comment réserver vos sessions ?
       </h3>
+      <p className="absolute top-2 -right-11 mb-11 w-40 text-white text-center  text-xl md:text-xl bg-secondary px-4 py-1 rounded-lg transform rotate-45">
+        Repas inclus
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
         <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-blue-50 p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
@@ -28,21 +31,20 @@ const BookingGuide: React.FC = () => {
             <h4 className="text-lg font-bold text-[#8cc6e9] mb-2">
               Réservez vos journées
             </h4>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>
-                <span className="font-semibold text-[#FF1C66]">
-                  Journée complète à 200€, ou le pass 3 jours à 500€:
-                </span>{" "}
-                Consultez le planning de chaque journée.
-              </li>
+            <span className="font-semibold text-[#FF1C66]">Deux options :</span>
+            <ul className="list-disc pl-5 space-y-1 mb-3">
+              <li className="ml-3">Journée complète: 200€</li>
+              <li className="ml-3">Pass 3 jours : 500€</li>
+            </ul>
+            <ul>
               <li>
                 <span className="font-semibold text-[#FF1C66]">
                   Des conférences communes le matin et des ateliers au choix
                   l’après-midi :
                 </span>{" "}
-                Choisissez spécifiquement les sessions qui vous intéressent.
               </li>
             </ul>
+            Choisissez spécifiquement les sessions qui vous intéressent.
           </div>
         </div>
 

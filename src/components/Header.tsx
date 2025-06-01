@@ -39,11 +39,30 @@ const Header: React.FC = () => {
 
       <div className="container w-full max-w-[100rem] mx-auto p-4 flex justify-between items-center md:h-28 ">
         <div className="flex items-center flex-col w-1/4 min-w-[14rem] max-w-[20rem]">
-          <img
-            src="logos/logo-header.webp"
-            className=""
-            alt="Logo de LearnsRH"
-          />
+          <Link
+            to="/#hero"
+            onClick={(e) => {
+              e.preventDefault();
+              if (window.location.pathname !== "/") {
+                navigate("/");
+                setTimeout(() => {
+                  document
+                    .getElementById("hero")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }, 100);
+              } else {
+                document
+                  .getElementById("hero")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            <img
+              src="logos/logo-header.webp"
+              className=""
+              alt="Logo de LearnsRH"
+            />
+          </Link>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">

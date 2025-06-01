@@ -1,8 +1,5 @@
-import type {
-  DaySectionProps,
-  ThemeIconFunction,
-  SpeakerIconFunction,
-} from "../types";
+import { DaySectionProps } from "../types";
+import { ThemeIconFunction, SpeakerIconFunction } from "../../shared/types";
 import { formatDate, getDayOfWeek } from "../utils/dateUtils";
 import { WorkshopRow } from "./WorkshopRow";
 import { ThemeIcon } from "./ThemeIcon";

@@ -36,7 +36,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   };
 
   return (
-    <section className="relative bg-gradient-to-l from-secondary to-transparent overflow-hidden flex items-center justify-center h-[100%] px-4 sm:px-6 md:px-11 lg:px-0 py-11">
+    <section
+      id="hero"
+      className="relative bg-gradient-to-l from-secondary to-transparent overflow-hidden flex items-center justify-center h-[100%] px-4 sm:px-6 md:px-11 lg:px-0 py-11"
+    >
       <div className="absolute inset-0 z-0">
         <img
           src={backgroundImage}

@@ -14,9 +14,9 @@ const SpeakersSection: React.FC = () => {
   const slideWidthRef = useRef(0);
 
   const getSlidesPerView = () => {
-    if (window.innerWidth >= 1024) return 3;
-    if (window.innerWidth >= 768) return 2;
-    return 1;
+    if (window.innerWidth >= 1024) return 3; // lg screens
+    if (window.innerWidth >= 768) return 2; // md screens
+    return 1; // sm and xs screens
   };
 
   const slidesPerView = getSlidesPerView();
@@ -85,7 +85,7 @@ const SpeakersSection: React.FC = () => {
               {speakersData.map((speaker: Speaker, index: number) => (
                 <div
                   key={index}
-                  className="speaker-card w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1.33rem)] lg:w-[calc(25%-1.5rem)] min-h-[25rem] px-3
+                  className="speaker-card w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1.33rem)] lg:w-[calc(25%-1.5rem)] min-h-[25rem] lg:min-h-[30rem] xl:min-h-[25rem] px-3
                   bg-white rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-t-4 border-[#8cc6e9] relative h-full flex flex-col justify-between"
                   style={{
                     minWidth:
@@ -96,12 +96,14 @@ const SpeakersSection: React.FC = () => {
                         : "calc(33.33% - 1.33rem)",
                   }}
                 >
-                  <div className="relative w-32 mx-auto mb-6 justify-self-stretch">
-                    <img
-                      src={speaker.image}
-                      alt={`${speaker.firstName} ${speaker.lastName}`}
-                      className="w-full h-full object-cover rounded-full border-4 border-[#FF1C66] shadow-md"
-                    />
+                  <div className="relative w-32 mx-auto mb-6 justify-self-stretch group pt-6">
+                    <div className="aspect-square rounded-full overflow-hidden">
+                      <img
+                        src={speaker.image}
+                        alt={`${speaker.firstName} ${speaker.lastName}`}
+                        className="w-full h-full object-cover scale-[1.40]"
+                      />
+                    </div>
                   </div>
                   <h3 className="text-xl font-bold text-[#8cc6e9] mb-2 text-center">
                     {speaker.firstName} {speaker.lastName}

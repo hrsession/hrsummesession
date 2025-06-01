@@ -38,18 +38,18 @@ const DayTimeline: React.FC = () => {
       icon: <Coffee size={28} />,
       color: "bg-primary",
       image:
-        "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop&q=80",
     },
     {
       id: "step-2",
       time: "9:00",
-      title: "SESSION MATINALE",
+      title: "CONFÉRENCES MATINALES",
       description:
-        "Ateliers avec des experts RH pour explorer les dernières tendances du secteur.",
+        "Conférences avec des experts RH pour explorer les dernières tendances du secteur.",
       icon: <Target size={28} />,
       color: "bg-primary",
       image:
-        "https://images.unsplash.com/photo-1558403194-611308249627?w=800&auto=format&fit=crop&q=80",
+        "https://unsplash.com/photos/1-aA2Fadydc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzR8fGNvbmYlQzMlQTlyZW5jZXxmcnwwfHx8fDE3NDg4MTA1MDh8Mg&force=true&w=2400",
     },
     {
       id: "step-3",
@@ -60,17 +60,17 @@ const DayTimeline: React.FC = () => {
       icon: <Apple size={28} />,
       color: "bg-primary",
       image:
-        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&auto=format&fit=crop&q=80",
+        "https://unsplash.com/photos/-hx1f4zU_cQ/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjF8fHBhdXNlJTIwZ291cm1hbmRlfGZyfDB8fHx8MTc0ODgxMDgzMXwy&force=true&w=2400",
     },
     {
       id: "step-4",
       time: "11:00",
-      title: "Deuxième atelier de la matinée",
+      title: "Deuxième conférence de la matinée",
       description: "Atelier et/ou conférence selon le planning du jour.",
       icon: <Brain size={28} />,
       color: "bg-primary",
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80",
+        "https://unsplash.com/photos/1-aA2Fadydc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzR8fGNvbmYlQzMlQTlyZW5jZXxmcnwwfHx8fDE3NDg4MTA1MDh8Mg&force=true&w=2400",
     },
     {
       id: "step-5",
@@ -80,7 +80,7 @@ const DayTimeline: React.FC = () => {
       icon: <Utensils size={28} />,
       color: "bg-primary-light",
       image:
-        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&auto=format&fit=crop&q=80",
     },
     {
       id: "step-6",
@@ -90,7 +90,7 @@ const DayTimeline: React.FC = () => {
       icon: <BarChart2 size={28} />,
       color: "bg-primary-light",
       image:
-        "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80",
     },
     {
       id: "step-7",
@@ -101,7 +101,7 @@ const DayTimeline: React.FC = () => {
       icon: <BarChart2 size={28} />,
       color: "bg-primary-light",
       image:
-        "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=800&auto=format&fit=crop&q=80",
     },
     {
       id: "step-8",
@@ -111,10 +111,10 @@ const DayTimeline: React.FC = () => {
       icon: <RefreshCw size={28} />,
       color: "bg-primary-light",
       image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80",
     },
     {
-      id: "step-8",
+      id: "step-9",
       time: "18:00",
       title: "COCKTAIL NETWORK",
       description:
@@ -122,7 +122,7 @@ const DayTimeline: React.FC = () => {
       icon: <Wine size={28} />,
       color: "bg-primary-light",
       image:
-        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&auto=format&fit=crop&q=80",
     },
   ];
 
@@ -223,22 +223,18 @@ const DayTimeline: React.FC = () => {
       <div className="relative">
         <div
           ref={containerRef}
-          className="h-[70vh] overflow-y-auto md:overflow-y-auto overflow-x-auto md:overflow-x-hidden hide-scrollbar"
+          className="h-[70vh] overflow-y-auto  overflow-x-auto md:overflow-x-hidden hide-scrollbar"
         >
           <div className="relative md:relative flex md:block">
             <div className="absolute left-[50%] top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-primary-light hidden md:block"></div>
-            <div className="absolute top-[50%] left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-primary-light md:hidden"></div>
-
             {timelineEvents.map((event, index) => (
               <div
                 key={index}
                 id={event.id}
                 ref={(el) => (sectionsRef.current[index] = el)}
-                className={`flex min-h-[70vh] md:min-h-[70vh] min-w-[100vw] md:min-w-0 items-center ${
-                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                } px-6 md:px-12 py-16`}
+                className="flex flex-col md:flex-row min-h-[70vh] md:min-h-[70vh] min-w-[100vw] md:min-w-0 items-center px-6 md:px-12 py-16"
               >
-                <div className="flex-1 p-6 z-10">
+                <div className="flex-1 p-6 z-10 w-full md:w-auto">
                   <div
                     className={`rounded-lg overflow-hidden transition-all duration-500 ${
                       activeSection === index
@@ -259,17 +255,17 @@ const DayTimeline: React.FC = () => {
                       </div>
                     </div>
 
-                    <h3 className="text-2xl text-secondary font-bold mb-3">
+                    <h3 className="text-2xl text-secondary font-bold mb-0 ">
                       {event.title}
                     </h3>
 
-                    <p className="text-gray-600 mb-6 max-w-md">
+                    <p className="text-gray-600  max-w-md">
                       {event.description}
                     </p>
                   </div>
                 </div>
 
-                <div className="z-10 relative flex-shrink-0">
+                <div className="z-10 relative flex-shrink-0 my-4 md:my-0">
                   <div
                     className={`w-8 h-8 rounded-full border-4 border-white transition-all duration-300 ${
                       activeSection === index
@@ -279,7 +275,7 @@ const DayTimeline: React.FC = () => {
                   ></div>
                 </div>
 
-                <div className="flex-1 p-6 z-10">
+                <div className="flex-1 p-3 md:p-6 z-10 w-full md:w-auto">
                   <div
                     className={`overflow-hidden rounded-xl shadow-lg transition-all duration-700 ${
                       activeSection === index
@@ -301,8 +297,8 @@ const DayTimeline: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-primary/10 to-primary-light/10 p-6">
-        <div className="flex items-start max-w-lg mx-auto">
+      <div className="bg-gradient-to-r from-primary/50 to-primary-light/25 p-6">
+        <div className="flex items-start w-3/4 mx-auto">
           <Clock size={24} className="text-secondary mr-3 flex-shrink-0 mt-1" />
           <div>
             <h3 className="font-bold text-lg text-secondary mb-2">
@@ -326,7 +322,7 @@ const DayTimeline: React.FC = () => {
               Peu importe la journée que vous réservez,
             </p>
             <p className="text-center mt-4 font-semibold">
-              👉 l’accès à l'afterwork est inclus !
+              👉 l'accès à l'afterwork est inclus !
             </p>
           </div>
         </div>
