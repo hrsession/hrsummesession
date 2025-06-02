@@ -6,15 +6,17 @@ interface WorkshopRowProps {
   workshop: Workshop;
   selectedWorkshop: string | null;
   onWorkshopSelect: (id: string | null) => void;
+  bgColor?: string;
 }
 
 export const WorkshopRow: React.FC<WorkshopRowProps> = ({
   workshop,
   selectedWorkshop,
   onWorkshopSelect,
+  bgColor = "bg-blue-50",
 }) => {
   return (
-    <tr className="border-b border-blue-50 bg-green-50">
+    <tr className={`border-b ${bgColor}`}>
       <td className="py-3 md:py-4 px-2 md:px-4 font-semibold text-primary flex items-center text-sm md:text-base">
         <svg
           xmlns="http://www.w3.org/2000/svg"

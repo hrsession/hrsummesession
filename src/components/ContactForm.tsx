@@ -7,9 +7,13 @@ interface ContactFormProps {
 const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
   const [formData, setFormData] = useState({
     nom: "",
+    prenom: "",
+    fonction: "",
+    societe: "",
     email: "",
-    sujet: "",
+    telephone: "",
     message: "",
+    consentement: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -32,10 +36,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
     if (
       !formData.nom ||
       !formData.email ||
-      !formData.sujet ||
-      !formData.message
+      !formData.message ||
+      !formData.consentement
     ) {
-      setSubmitError("Veuillez remplir tous les champs obligatoires.");
+      setSubmitError(
+        "Veuillez remplir tous les champs obligatoires et accepter les conditions d'utilisation des données."
+      );
       return;
     }
 
@@ -44,13 +50,17 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
 
     try {
       const googleFormUrl =
-        "https://script.google.com/macros/s/AKfycbz_MWNUShZfV0XWRg6NLe_iZCQDrt4sy9SqyUY4Btxif26Bm3ylBv1SMiO4vt7c53zZyQ/exec";
+        "https://script.google.com/macros/s/AKfycbx0dzxNITqo4eWG_S526Vkkm_nhXQbiHskRgHjBMgQjzOrY1gxucX5hvhI5wy7MCIDONQ/exec";
 
       const dataToSend = {
         nom: formData.nom,
+        prenom: formData.prenom,
+        fonction: formData.fonction,
+        societe: formData.societe,
         email: formData.email,
-        sujet: formData.sujet,
+        telephone: formData.telephone,
         message: formData.message,
+        consentement: formData.consentement,
         dateContact: new Date().toISOString(),
       };
 
@@ -118,9 +128,13 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
       }
       setFormData({
         nom: "",
+        prenom: "",
+        fonction: "",
+        societe: "",
         email: "",
-        sujet: "",
+        telephone: "",
         message: "",
+        consentement: false,
       });
     } catch (error) {
       console.error("Erreur lors de l'envoi du formulaire de contact:", error);
@@ -216,23 +230,78 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
             </div>
           )}
 
-          <div>
-            <label
-              htmlFor="nom"
-              className="block text-gray-700 font-medium mb-1 text-sm"
-            >
-              Nom <span className="text-secondary">*</span>
-            </label>
-            <input
-              type="text"
-              id="nom"
-              name="nom"
-              value={formData.nom}
-              onChange={handleInputChange}
-              className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
-              placeholder="Votre nom"
-              required
-            />
+          <div className="flex gap-4">
+            <div className="flex-1">
+              <label
+                htmlFor="nom"
+                className="block text-gray-700 font-medium mb-1 text-sm"
+              >
+                Nom <span className="text-secondary">*</span>
+              </label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                value={formData.nom}
+                onChange={handleInputChange}
+                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+            <div className="flex-1">
+              <label
+                htmlFor="prenom"
+                className="block text-gray-700 font-medium mb-1 text-sm"
+              >
+                Prénom
+              </label>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                value={formData.prenom}
+                onChange={handleInputChange}
+                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                placeholder="Votre prénom"
+              />
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div className="flex-1">
+              <label
+                htmlFor="fonction"
+                className="block text-gray-700 font-medium mb-1 text-sm"
+              >
+                Fonction
+              </label>
+              <input
+                type="text"
+                id="fonction"
+                name="fonction"
+                value={formData.fonction}
+                onChange={handleInputChange}
+                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                placeholder="Votre fonction"
+              />
+            </div>
+            <div className="flex-1">
+              <label
+                htmlFor="societe"
+                className="block text-gray-700 font-medium mb-1 text-sm"
+              >
+                Société
+              </label>
+              <input
+                type="text"
+                id="societe"
+                name="societe"
+                value={formData.societe}
+                onChange={handleInputChange}
+                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                placeholder="Votre société"
+              />
+            </div>
           </div>
           <div>
             <label
@@ -254,20 +323,19 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
           </div>
           <div>
             <label
-              htmlFor="sujet"
+              htmlFor="telephone"
               className="block text-gray-700 font-medium mb-1 text-sm"
             >
-              Sujet <span className="text-secondary">*</span>
+              Téléphone
             </label>
             <input
-              type="text"
-              id="sujet"
-              name="sujet"
-              value={formData.sujet}
+              type="tel"
+              id="telephone"
+              name="telephone"
+              value={formData.telephone}
               onChange={handleInputChange}
               className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
-              placeholder="Objet de votre message"
-              required
+              placeholder="Votre numéro de téléphone"
             />
           </div>
           <div>
@@ -287,6 +355,24 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
               placeholder="Votre message..."
               required
             ></textarea>
+          </div>
+          <div>
+            <label htmlFor="consentement" className="flex items-center">
+              <input
+                type="checkbox"
+                id="consentement"
+                name="consentement"
+                checked={formData.consentement}
+                onChange={handleInputChange}
+                className="mr-2 border-primary focus:ring-primary"
+              />
+              <span className="text-gray-700">
+                J'autorise ce site à conserver mes données personnelles
+                transmises via ce formulaire. Aucune exploitation commerciale ne
+                sera faite des données conservées. Voir notre politique de
+                gestion des données personnelles
+              </span>
+            </label>
           </div>
 
           <div className="text-center mt-6">

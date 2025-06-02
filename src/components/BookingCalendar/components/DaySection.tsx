@@ -28,10 +28,19 @@ export const DaySection: React.FC<DaySectionProps> = ({
 }) => {
   const firstWorkshop = workshops[0];
   const morningWorkshops = workshops.filter(
-    (w) => w.horaires.startsWith("9") || w.horaires.startsWith("11")
+    (w) =>
+      (w.horaires.startsWith("9") || w.horaires.startsWith("11")) &&
+      !w.isSpecialLunch
+  );
+  const lunchWorkshops = workshops.filter(
+    (w) =>
+      w.isSpecialLunch ||
+      (w.horaires.startsWith("12") && !w.horaires.startsWith("14"))
   );
   const afternoonWorkshops = workshops.filter(
-    (w) => w.horaires.startsWith("14") || w.horaires.startsWith("16")
+    (w) =>
+      (w.horaires.startsWith("14") || w.horaires.startsWith("16")) &&
+      !w.isSpecialLunch
   );
 
   const canReserveDay = selectedAfternoonCount >= requiredCount;
@@ -181,7 +190,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                   {morningWorkshops.map((workshop) => (
                     <tr
                       key={workshop.id}
-                      className={`border-b border-blue-50 bg-green-50 ${
+                      className={`border-b border-blue-50 bg-blue-50 ${
                         workshop.highlighted ? "bg-opacity-75" : ""
                       }`}
                     >
@@ -222,6 +231,109 @@ export const DaySection: React.FC<DaySectionProps> = ({
                                 {workshop.format}
                               </span>
                             )}
+                            <span className="ml-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
+                              Inclus
+                            </span>
+                          </span>
+                        </div>
+                      </td>
+                      <td className="py-4 px-4">
+                        <div className="flex items-center">
+                          <span
+                            className={`${
+                              workshop.highlighted
+                                ? "bg-secondary"
+                                : "bg-primary"
+                            } text-white p-1 rounded-full mr-2`}
+                          >
+                            {getSpeakerIconFunction()}
+                          </span>
+                          <span className="font-semibold">
+                            {workshop.intervenant}
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          {/* Section Pause déjeuner spéciale */}
+          {lunchWorkshops.length > 0 && (
+            <div className="mb-6">
+              <h4 className="font-bold text-primary mb-3 flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                Pause déjeuner spéciale
+              </h4>
+              <table className="w-full border-collapse min-w-full mb-6">
+                <thead>
+                  <tr className="bg-green-50 text-primary">
+                    <th className="py-3 px-4 text-left border-b border-green-100 font-bold">
+                      Horaire
+                    </th>
+                    <th className="py-3 px-4 text-left border-b border-green-100 font-bold">
+                      Événement
+                    </th>
+                    <th className="py-3 px-4 text-left border-b border-green-100 font-bold">
+                      Intervenant(e)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {lunchWorkshops.map((workshop) => (
+                    <tr
+                      key={workshop.id}
+                      className={`border-b border-green-50 bg-green-50 ${
+                        workshop.highlighted ? "bg-opacity-75" : ""
+                      }`}
+                    >
+                      <td className="py-4 px-4 font-semibold text-primary flex items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5 mr-1 text-secondary"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        {workshop.horaires}
+                      </td>
+                      <td className="py-4 px-4">
+                        <div className="flex items-center">
+                          <span
+                            className={`${
+                              workshop.highlighted
+                                ? "bg-secondary"
+                                : "bg-primary"
+                            } text-white p-1 rounded-full mr-2`}
+                          >
+                            {getThemeIconFunction(workshop.theme)}
+                          </span>
+                          <span>
+                            <span className="font-semibold">
+                              {workshop.titre}
+                            </span>
                             <span className="ml-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
                               Inclus
                             </span>

@@ -593,7 +593,8 @@ const BookingForm: React.FC<BookingFormProps> = ({
               />
               <label htmlFor="acceptConditions" className="ml-2 text-xs">
                 J'accepte les conditions générales de vente et la politique de
-                confidentialité
+                confidentialité autorise ce site à conserver mes données
+                personnelles transmises via ce formulaire.
               </label>
             </div>
 

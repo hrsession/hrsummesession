@@ -3,15 +3,15 @@ export interface Workshop {
   intervenant: string;
   theme: string;
   highlighted: boolean;
-  atelier: string;
-  titre?: string;
-  "dot-1"?: string;
-  "dot-2"?: string;
-  "dot-3"?: string;
+  titre: string;
+  "dot-1": string;
+  "dot-2": string;
+  "dot-3": string;
   date: string;
   jour: string;
   horaires: string;
   format?: string;
+  isSpecialLunch?: boolean;
 }
 
 export interface WorkshopsByDay {

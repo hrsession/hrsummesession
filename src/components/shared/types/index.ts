@@ -10,7 +10,8 @@ export interface Workshop {
   "dot-1"?: string;
   "dot-2"?: string;
   "dot-3"?: string;
-  highlighted?: boolean;
+  highlighted: boolean;
+  isSpecialLunch?: boolean;
 }
 
 export type ThemeIconFunction = (theme: string) => JSX.Element;

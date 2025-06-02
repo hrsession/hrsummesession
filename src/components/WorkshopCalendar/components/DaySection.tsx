@@ -21,10 +21,19 @@ export const DaySection: React.FC<DaySectionProps> = ({
 }) => {
   const firstWorkshop = workshops[0];
   const morningWorkshops = workshops.filter(
-    (w) => w.horaires.startsWith("9") || w.horaires.startsWith("11")
+    (w) =>
+      (w.horaires.startsWith("9") || w.horaires.startsWith("11")) &&
+      !w.isSpecialLunch
+  );
+  const lunchWorkshops = workshops.filter(
+    (w) =>
+      w.isSpecialLunch ||
+      (w.horaires.startsWith("12") && !w.horaires.startsWith("14"))
   );
   const afternoonWorkshops = workshops.filter(
-    (w) => w.horaires.startsWith("14") || w.horaires.startsWith("16")
+    (w) =>
+      (w.horaires.startsWith("14") || w.horaires.startsWith("16")) &&
+      !w.isSpecialLunch
   );
 
   return (
@@ -125,6 +134,57 @@ export const DaySection: React.FC<DaySectionProps> = ({
                         workshop={workshop}
                         selectedWorkshop={selectedWorkshop}
                         onWorkshopSelect={onWorkshopSelect}
+                        bgColor="bg-blue-50"
+                      />
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+
+          {lunchWorkshops.length > 0 && (
+            <div className="mb-6">
+              <h4 className="font-bold text-primary mb-3 flex items-center text-base md:text-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 md:h-5 md:w-5 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                Pause déjeuner spéciale
+              </h4>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse min-w-[800px] mb-6">
+                  <thead>
+                    <tr className="bg-green-50 text-primary">
+                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-green-100 font-bold w-1/4 text-sm md:text-base">
+                        Horaire
+                      </th>
+                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-green-100 font-bold w-1/2 text-sm md:text-base">
+                        Événement
+                      </th>
+                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-green-100 font-bold w-1/4 text-sm md:text-base">
+                        Intervenant(e)
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {lunchWorkshops.map((workshop) => (
+                      <WorkshopRow
+                        key={workshop.id}
+                        workshop={workshop}
+                        selectedWorkshop={selectedWorkshop}
+                        onWorkshopSelect={onWorkshopSelect}
+                        bgColor="bg-green-50"
                       />
                     ))}
                   </tbody>
@@ -174,6 +234,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                         workshop={workshop}
                         selectedWorkshop={selectedWorkshop}
                         onWorkshopSelect={onWorkshopSelect}
+                        bgColor="bg-orange-50"
                       />
                     ))}
                   </tbody>

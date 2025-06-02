@@ -4,12 +4,14 @@ export interface Workshop {
   date: string;
   horaires: string;
   theme: string;
-  titre: string;
+  titre?: string;
   intervenant: string;
   format?: string;
   "dot-1"?: string;
   "dot-2"?: string;
   "dot-3"?: string;
+  highlighted: boolean;
+  isSpecialLunch?: boolean;
 }
 
 export interface WorkshopCalendarProps {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import workshopData from "../../data/workshops.json";
-import type { BookingCalendarProps } from "./types";
-import type { Workshop } from "../shared/types";
+import type { Workshop } from "../../types";
+import type { BookingCalendarProps } from "./types/BookingCalendarProps";
 import { DaySection } from "./components/DaySection";
 
 const BookingCalendar: React.FC<BookingCalendarProps> = ({
