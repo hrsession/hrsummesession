@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import DayTimeline from "./DayTimeline";
 
 const BenefitsSection: React.FC = () => {
@@ -158,8 +159,9 @@ const BenefitsSection: React.FC = () => {
                 garantir la qualité des échanges et des ateliers.
               </p>
             </div>
-            <a
-              href="#programme"
+            <Link
+              Link
+              to="/programme"
               className="inline-flex items-center bg-white text-[#8cc6e9] hover:bg-blue-50 font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
             >
               <svg
@@ -177,7 +179,7 @@ const BenefitsSection: React.FC = () => {
                 />
               </svg>
               Je réserve maintenant
-            </a>
+            </Link>
           </div>
         </div>
       </div>
