@@ -33,8 +33,8 @@ const BookingGuide: React.FC = () => {
             </h4>
             <span className="font-semibold text-[#FF1C66]">Deux options :</span>
             <ul className="list-disc pl-5 space-y-1 mb-3">
-              <li className="ml-3">Journée complète: 200€</li>
-              <li className="ml-3">Pass 3 jours : 500€</li>
+              <li className="ml-3">Journée complète: 200€ HT</li>
+              <li className="ml-3">Pass 3 jours : 500€ HT</li>
             </ul>
             <ul>
               <li>

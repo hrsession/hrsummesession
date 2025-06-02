@@ -408,7 +408,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                   Total :
                 </span>
                 <span className="text-xl font-bold text-primary bg-white px-3 py-1 rounded-lg shadow">
-                  {calculateTotal()}€
+                  {calculateTotal()}€ HT
                 </span>
               </div>
               <div className="flex items-center bg-white bg-opacity-50 p-2 rounded-lg">
