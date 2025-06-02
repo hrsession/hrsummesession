@@ -82,7 +82,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
               workshop.titre !== "" &&
               workshop.titre.includes("Le RH est il un psy ?") && (
                 <span className="ml-2 bg-purple-500 text-white text-xs px-2 py-1 rounded-full">
-                  3h30 - Exclusif
+                  3h00 - Exclusif
                 </span>
               )}
           </span>

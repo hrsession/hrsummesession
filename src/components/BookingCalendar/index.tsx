@@ -11,7 +11,17 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
   handleAfternoonWorkshopSelection = () => {},
 }) => {
   const [workshops, setWorkshops] = useState<Workshop[]>([]);
-  const [expandedDays, setExpandedDays] = useState<string[]>(["jour1"]);
+  const [expandedDays, setExpandedDays] = useState<string[]>(
+    Object.keys(
+      workshopData.reduce((acc, workshop) => {
+        if (!acc[workshop.jour]) {
+          acc[workshop.jour] = [];
+        }
+        acc[workshop.jour].push(workshop);
+        return acc;
+      }, {} as Record<string, Workshop[]>)
+    )
+  );
 
   useEffect(() => {
     setWorkshops(workshopData);
@@ -76,7 +86,7 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
           {" "}
           Note spéciale:
         </span>{" "}
-        L'atelier "Le RH est il un psy ?" du mardi dure 3h30 et occupe tout
+        L'atelier "Le RH est il un psy ?" du mardi dure 3h00 et occupe tout
         l'après-midi à lui seul.
       </p>
 

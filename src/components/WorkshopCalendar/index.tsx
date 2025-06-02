@@ -5,7 +5,17 @@ import type { WorkshopCalendarProps, WorkshopsByDay, Workshop } from "./types";
 import { DaySection } from "./components/DaySection";
 
 const WorkshopCalendar: React.FC<WorkshopCalendarProps> = () => {
-  const [expandedDays, setExpandedDays] = useState<string[]>(["jour1"]);
+  const [expandedDays, setExpandedDays] = useState<string[]>(
+    Object.keys(
+      workshopData.reduce((acc, workshop) => {
+        if (!acc[workshop.jour]) {
+          acc[workshop.jour] = [];
+        }
+        acc[workshop.jour].push(workshop);
+        return acc;
+      }, {} as WorkshopsByDay)
+    )
+  );
   const [selectedWorkshop, setSelectedWorkshop] = useState<string | null>(null);
   const navigate = useNavigate();
 

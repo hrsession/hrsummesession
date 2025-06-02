@@ -474,7 +474,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                           requiredCount - selectedAfternoonCount
                         } activité(s) de l'après-midi supplémentaire(s) avant de pouvoir réserver cette journée.${
                           day === "jour2"
-                            ? " (Note: l'atelier \"Le RH est il un psy ?\" dure 3h30 et occupe tout l'après-midi)"
+                            ? " (Note: l'atelier \"Le RH est il un psy ?\" dure 3h00 et occupe tout l'après-midi)"
                             : ""
                         }`
                       : "Parfait ! Vous pouvez maintenant réserver cette journée complète."}
