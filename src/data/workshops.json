@@ -79,6 +79,19 @@
   },
   {
     "id": "j2a1",
+    "intervenant": "Clément Lemainque",
+    "theme": "Symétrie des attention",
+    "highlighted": false,
+    "titre": "ILa symétrie des attentions ou comment l’expérience collaborateur est au service de l’expérience client",
+    "dot-1": "Comprendre le concept de symétrie des attentions appliqué à la RH",
+    "dot-2": "Mettre en miroir expérience client & expérience collaborateur",
+    "dot-3": "Connaître les étapes clés de l'expérience collaborateur et maîtriser les clés d’une expérience collaborateur réussie",
+    "date": "8-Jul",
+    "jour": "jour2",
+    "horaires": "9h - 10h30"
+  },
+  {
+    "id": "j2a2",
     "intervenant": "Lobna Calleja",
     "theme": "Data RH",
     "highlighted": false,
@@ -88,10 +101,10 @@
     "dot-3": "Rendre les données RH utiles aux managers, au Codir, et aux équipes",
     "date": "8-Jul",
     "jour": "jour2",
-    "horaires": "9h - 10h30"
+    "horaires": "11h - 12H30"
   },
   {
-    "id": "j2a2",
+    "id": "j2a3",
     "intervenant": "Anne Brochard",
     "theme": "Recrutement",
     "highlighted": true,
@@ -101,10 +114,10 @@
     "dot-3": "Culture du swipe : le mirage du \"toujours mieux ailleurs\"",
     "date": "8-Jul",
     "jour": "jour2",
-    "horaires": "11h - 12H30"
+    "horaires": "16h - 17h30"
   },
   {
-    "id": "j2a3",
+    "id": "j2a4",
     "intervenant": "Pierre Monclos",
     "theme": "Pause déjeuner spéciale",
     "highlighted": true,
@@ -116,19 +129,6 @@
     "jour": "jour2",
     "horaires": "12h30 - 14h00",
     "isSpecialLunch": true
-  },
-  {
-    "id": "j2a4",
-    "intervenant": "Ophélie Ayouaz",
-    "theme": "Soft Skills",
-    "highlighted": false,
-    "titre": "(Re)prendre le contrôle de son temps RH pour une rentrée efficace",
-    "dot-1": "Identifier ses voleurs de temps et créer un agenda stratégique RH",
-    "dot-2": "S'outiller pour prioriser les actions à forte valeur ajoutée",
-    "dot-3": "Définir des rituels pour préserver son équilibre pro/perso",
-    "date": "8-Jul",
-    "jour": "jour2",
-    "horaires": "14h - 15h30"
   },
   {
     "id": "j2a5",
@@ -145,6 +145,19 @@
   },
   {
     "id": "j2a6",
+    "intervenant": "Ophélie Ayouaz",
+    "theme": "Soft Skills",
+    "highlighted": false,
+    "titre": "(Re)prendre le contrôle de son temps RH pour une rentrée efficace",
+    "dot-1": "Identifier ses voleurs de temps et créer un agenda stratégique RH",
+    "dot-2": "S'outiller pour prioriser les actions à forte valeur ajoutée",
+    "dot-3": "Définir des rituels pour préserver son équilibre pro/perso",
+    "date": "8-Jul",
+    "jour": "jour2",
+    "horaires": "14h - 15h30"
+  },
+  {
+    "id": "j2a7",
     "intervenant": "Richard Lavergne",
     "theme": "LeaderShip",
     "highlighted": false,
@@ -154,7 +167,7 @@
     "dot-3": "Renforcer la posture managériale autour de l’écoute, de la confiance et du soutien",
     "date": "8-Jul",
     "jour": "jour2",
-    "horaires": "14h - 17h00"
+    "horaires": "14h - 17h"
   },
   {
     "id": "j3a1",
@@ -219,7 +232,7 @@
     "dot-3": "Parce qu'on mérite mieux que 'il est bien arrivée ?' sur teams",
     "date": "9-Jul",
     "jour": "jour3",
-    "horaires": "16h - 17h00"
+    "horaires": "16h - 17h30"
   },
   {
     "id": "j3a8",
@@ -232,7 +245,7 @@
     "dot-3": "",
     "date": "9-Jul",
     "jour": "jour3",
-    "horaires": "16h - 17h00"
+    "horaires": "16h - 17h30"
   },
   {
     "id": "j3a7",

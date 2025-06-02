@@ -57,10 +57,10 @@ const BookingGuide: React.FC = () => {
               Pour les réservations de journée
             </h4>
             <p className="text-gray-700">
-              Après avoir sélectionné une journée complète, vous devrez choisir
-              2 ateliers de l'après-midi ceux proposées. Ceux-ci seront mises en
-              évidence et vous pourrez cliquer dessus pour faire votre
-              sélection.
+              Après avoir sélectionné 2 ateliers de l'après-midi parmi ceux
+              proposés, vous pourrez réserver la journée complète. Les ateliers
+              seront mis en évidence et vous pourrez cliquer dessus pour faire
+              votre sélection.
             </p>
           </div>
         </div>
