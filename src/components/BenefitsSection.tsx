@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import DayTimeline from "./DayTimeline";
 
 const BenefitsSection: React.FC = () => {
@@ -47,8 +47,8 @@ const BenefitsSection: React.FC = () => {
             </h3>
             <p className="text-gray-600">
               Nos formateurs ne sont pas seulement des théoriciens : ce sont des
-              professionnels reconnus, avec une expérience terrain des enjeux RH
-              d’aujourd’hui.
+              professionnels reconnus, avec une expérience terrain des enjeux RH
+              d'aujourd'hui.
             </p>
             <div className="mt-4 bg-blue-50 p-3 rounded-lg">
               <p className="text-md font-bold text-[#8cc6e9]">
@@ -95,7 +95,7 @@ const BenefitsSection: React.FC = () => {
               <p>
                 Dans un{" "}
                 <span className="font-semibold">
-                  cadre convivial et propice à l’apprentissage
+                  cadre convivial et propice à l'apprentissage
                 </span>
                 , favorisant les échanges authentiques et les rencontres
                 durables.
@@ -128,7 +128,7 @@ const BenefitsSection: React.FC = () => {
               Des idées à embarquer
             </h3>
             <p className="text-gray-600">
-              Des ateliers et conférences conçus pour l’action. Explorez des
+              Des ateliers et conférences conçus pour l'action. Explorez des
               outils concrets, découvrez des solutions applicables à vos enjeux
               RH.
             </p>
@@ -136,7 +136,7 @@ const BenefitsSection: React.FC = () => {
               <p className="text-md font-bold">Repartez avec du concret</p>
               <ul className="text-sm text-[#8cc6e9] font-semibold">
                 <li className="text-left">✔️ Des ressources pratiques</li>
-                <li className="text-left">✔️ Des modèles prêts à l’emploi</li>
+                <li className="text-left">✔️ Des modèles prêts à l'emploi</li>
                 <li className="text-left">
                   ✔️ De quoi agir dès votre retour en entreprise
                 </li>
@@ -160,7 +160,6 @@ const BenefitsSection: React.FC = () => {
               </p>
             </div>
             <Link
-              Link
               to="/programme"
               className="inline-flex items-center bg-white text-[#8cc6e9] hover:bg-blue-50 font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
             >
