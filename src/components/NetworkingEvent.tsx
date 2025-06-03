@@ -1,7 +1,6 @@
 const NetworkingEvent: React.FC = () => {
   return (
     <div className="bg-gradient-to-br from-[#8cc6e9] to-[#67b8d8] text-white rounded-xl shadow-lg p-6 mb-8 relative overflow-hidden transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
-      {/* Effet de flammes stylisées */}
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#FF1C66] via-[#FF7E00] to-transparent opacity-60"></div>
 
       <div className="flex flex-col md:flex-row items-center justify-between relative z-10">
@@ -22,7 +21,7 @@ const NetworkingEvent: React.FC = () => {
               />
             </svg>
             <h3 className="w-auto mx-auto text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 md:mb-11 relative inline-block text-center">
-              Soirée networking
+              Afterwork & Networking
               <div className="absolute -bottom-3 left-0 right-0 h-1 bg-[#FF1C66] rounded-full transform -rotate-1"></div>
             </h3>
           </div>
@@ -51,7 +50,7 @@ const NetworkingEvent: React.FC = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Buffet</span>
+                <span>Apéritif sous la forme d’un Cocktail </span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -68,7 +67,7 @@ const NetworkingEvent: React.FC = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Échange et cocktails</span>
+                <span>Partage & convivialité</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -85,7 +84,7 @@ const NetworkingEvent: React.FC = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Partage et convivialité</span>
+                <span>Une intervention à ne pas manquer</span>
               </li>
             </ul>
           </div>
