@@ -88,7 +88,7 @@
     "dot-3": "Culture du swipe : le mirage du \"toujours mieux ailleurs\".",
     "date": "8-Jul",
     "jour": "jour2",
-    "horaires": "9h30 - 11h00"
+    "horaires": "9h - 10h30"
   },
   {
     "id": "j2a2",
@@ -105,19 +105,6 @@
   },
   {
     "id": "j2a3",
-    "intervenant": "Clément Lemainque",
-    "theme": "Symétrie des attention",
-    "highlighted": false,
-    "titre": "ILa symétrie des attentions ou comment l'expérience collaborateur est au service de l'expérience client",
-    "dot-1": "Comprendre le concept de symétrie des attentions appliqué à la RH.",
-    "dot-2": "Mettre en miroir expérience client & expérience collaborateur.",
-    "dot-3": "Connaître les étapes clés de l'expérience collaborateur et maîtriser les clés d'une expérience collaborateur réussie.",
-    "date": "8-Jul",
-    "jour": "jour2",
-    "horaires": "16h - 17h30"
-  },
-  {
-    "id": "j2a4",
     "intervenant": "Pierre Monclos",
     "theme": "Pause déjeuner spéciale",
     "highlighted": true,
@@ -131,7 +118,7 @@
     "isSpecialLunch": true
   },
   {
-    "id": "j2a5",
+    "id": "j2a4",
     "intervenant": "Ophélie Ayouaz",
     "theme": "Soft Skills",
     "highlighted": false,
@@ -144,7 +131,7 @@
     "horaires": "14h - 15h30"
   },
   {
-    "id": "j2a6",
+    "id": "j2a5",
     "intervenant": "Richard Lavergne",
     "theme": "LeaderShip",
     "highlighted": false,
@@ -155,6 +142,19 @@
     "date": "8-Jul",
     "jour": "jour2",
     "horaires": "14h - 17h"
+  },
+  {
+    "id": "j2a6",
+    "intervenant": "Clément Lemainque",
+    "theme": "Symétrie des attention",
+    "highlighted": false,
+    "titre": "La symétrie des attentions ou comment l'expérience collaborateur est au service de l'expérience client",
+    "dot-1": "Comprendre le concept de symétrie des attentions appliqué à la RH.",
+    "dot-2": "Mettre en miroir expérience client & expérience collaborateur.",
+    "dot-3": "Connaître les étapes clés de l'expérience collaborateur et maîtriser les clés d'une expérience collaborateur réussie.",
+    "date": "8-Jul",
+    "jour": "jour2",
+    "horaires": "16h - 17h30"
   },
   {
     "id": "j3a1",
