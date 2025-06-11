@@ -279,8 +279,12 @@ const BookingForm: React.FC<BookingFormProps> = ({
             </button>
           </div>
         ) : (
-          <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-            {/* Récapitulatif des sélections */}
+          <form
+            id="booking-form"
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="space-y-4"
+          >
             <div className="mb-6">
               {selectedDays.length > 0 && (
                 <div className="mb-4">
