@@ -23,6 +23,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
     entreprise: "",
     fonction: "",
     acceptConditions: false,
+    codePromo: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -138,7 +139,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
 
     try {
       const googleFormUrl =
-        "https://script.google.com/macros/s/AKfycbwTZsqfcmpKy83v1y7aY6gwM_o3J44iFOsHqKjpe-hc0fmlNpcqKejBdDHn7wwdYe60/exec";
+        "https://script.google.com/macros/s/AKfycbyQUAGGj0qo14GH884ZYOXQ4fWx-A1evDFN1HaNkhlHpda7bKeM-7tX0yThA_j92Cb7/exec";
 
       const formattedSelections = formatSelections();
       const totalAmount = calculateTotal();
@@ -153,6 +154,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
         selections: formattedSelections,
         montantTotal: totalAmount,
         dateInscription: new Date().toISOString(),
+        codePromo: formData.codePromo,
       };
 
       try {
@@ -210,6 +212,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
         entreprise: "",
         fonction: "",
         acceptConditions: false,
+        codePromo: "",
       });
     } catch (error) {
       console.error("Erreur lors de l'envoi du formulaire:", error);
@@ -579,6 +582,24 @@ const BookingForm: React.FC<BookingFormProps> = ({
                     onChange={handleInputChange}
                     className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
                     placeholder="Votre fonction"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="fonction"
+                    className="block text-gray-700 font-medium mb-1 text-sm"
+                  >
+                    Code Promotionnel
+                  </label>
+                  <input
+                    type="text"
+                    id="codePromo"
+                    name="codePromo"
+                    value={formData.codePromo}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                    placeholder="Si un code promotionnel vous a
+                    été communiqué, merci de le saisir ici"
                   />
                 </div>
               </div>
