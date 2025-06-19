@@ -139,7 +139,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
 
     try {
       const googleFormUrl =
-        "https://script.google.com/macros/s/AKfycbyQUAGGj0qo14GH884ZYOXQ4fWx-A1evDFN1HaNkhlHpda7bKeM-7tX0yThA_j92Cb7/exec";
+        "https://script.google.com/macros/s/AKfycbxt0JperbnGGHx0gzHqyxFkqCy_ZylZqP4bqelbXLlfIj6dHrAN3QlrPTmTIHWvNFut/exec";
 
       const formattedSelections = formatSelections();
       const totalAmount = calculateTotal();
